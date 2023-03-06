@@ -1,0 +1,52 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: var(--header-width);
+}
+
+.container {
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    max-width: var(--container-width);
+    height: 100%;
+}
+
+.logoArea, .buttonsArea {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    height: 100%;
+}
+.logoArea img {
+    height: calc(var(--header-width) - 20px);
+    width: calc(var(--header-width) - 20px);
+}
+
+.buttonsArea span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: calc(var(--header-width) - 20px);
+    height: calc(var(--header-width) - 20px);
+
+    border-radius: 50%;
+
+    background: var(--font-color);
+    color: var(--background-color);
+
+    cursor: pointer;
+}
+.buttonsArea span:hover {
+    transform: scale(1.1);
+}
